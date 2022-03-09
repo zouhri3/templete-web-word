@@ -1,0 +1,122 @@
+// ______________________________________ start events_page ________________________________
+.events {
+  @extend %padding_section;
+  .content {
+    @extend %diplay_flex;
+    align-items: center;
+    gap: var(--section_padding);
+    flex-direction: row-reverse;
+    .events_box {
+      @extend %text_center;
+      flex: 1;
+      &.box_image {
+        width: 500px;
+        height: 400px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain !important;
+        }
+      }
+      .box_date {
+        @extend %diplay_flex;
+        justify-content: center;
+        gap: 15px;
+        p {
+          opacity: 1;
+          @extend %text_capitalize;
+          border: 2px solid var(--main_blue_alt3);
+          font-size: 0.9rem;
+          border-radius: 5px;
+          span {
+            display: block;
+            &:first-child {
+              border-bottom: 2px solid var(--main_blue_alt3);
+              font-size: 35px;
+              color: var(--main_green);
+              font-weight: bold;
+              min-width: 60px;
+              height: 70px;
+              line-height: 70px;
+            }
+            &:last-child {
+              padding: 5px;
+              opacity: 0.7;
+              font-size: 0.7rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      h3 {
+        color: var(--main_blue_alt1);
+      }
+    }
+  }
+  form#events_form {
+    width: fit-content;
+    margin: 50px auto auto;
+    padding: 20px;
+    background: var(--main_blue_alt3);
+    border-radius: 5px;
+    @extend %diplay_flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    input {
+      @extend %transition1;
+      border-radius: 5px;
+      padding: 10px 15px;
+      display: block;
+      border: 1px solid #fff;
+      background-color: #fff;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+        border-color: var(--main_blue_alt2);
+      }
+    }
+    .input_box {
+      width: 400px;
+    }
+    input[type="submit"] {
+      border: 1px solid var(--main_blue_alt1);
+      text-transform: capitalize;
+      font-weight: 900;
+      font-family: "Charm", cursive;
+      background: linear-gradient(
+        to right,
+        var(--main_blue_alt1) 50%,
+        var(--main_blue_alt3) 50%
+      );
+      background-size: 200% 100%;
+      background-position: right;
+      cursor: pointer;
+      color: var(--main_green);
+      flex: 1;
+      &:hover {
+        background-position: left;
+        color: var(--white_color);
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .events {
+    .content {
+      flex-direction: column;
+      gap: 50px;
+      .events_box {
+        max-width: 100% !important;
+        overflow: hidden;
+      }
+    }
+    form#events_form {
+      .input_box {
+        width: 100% !important;
+      }
+    }
+  }
+}
+// ______________________________________ end events_page ________________________________

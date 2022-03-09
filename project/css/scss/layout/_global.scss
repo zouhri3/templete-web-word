@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+  font-family: "Source Serif 4", sans-serif;
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+body {
+  @extend %transition1;
+  &.dark {
+    --main_blue: #fff;
+    --main_blue_alt1: #006bb9;
+    --main_blue_alt2: #d4e4fd;
+    --main_blue_alt3: #4fa5d8;
+    --main_green: #91d451;
+    --white_color: #002047;
+    background-color: #002047;
+  }
+}
+.section {
+  overflow: hidden;
+}
+// ______________________________________ start container ________________________________
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 767px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+input,
+textarea {
+  &::placeholder {
+    @extend %transition1;
+    @extend %text_capitalize;
+    color: var(--main_blue_alt1);
+    opacity: 0.4;
+  }
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+.input_box {
+  width: 100%;
+  label {
+    padding: 8px 15px;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--main_green);
+  }
+}
+
+// ______________________________________ end container ________________________________
+
+// ______________________________________ start all reset ________________________________
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+// ______________________________________ end all reset ________________________________
+p {
+  line-height: 1.7;
+  letter-spacing: 0.8px;
+  letter-spacing: 1px;
+  color: var(--main_blue);
+  opacity: 0.8;
+}
+h3 {
+  font-weight: bold;
+  @extend %text_capitalize;
+  color: var(--main_blue);
+}

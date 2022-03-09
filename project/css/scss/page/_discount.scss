@@ -1,0 +1,134 @@
+// ______________________________________ start discount_page ________________________________
+.discount {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  .discount_box {
+    padding-top: var(--section_padding);
+    padding-bottom: var(--section_padding);
+    width: 50%;
+    @extend %diplay_flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @extend %text_capitalize;
+    h2 {
+      margin-bottom: 50px;
+    }
+    &:first-child {
+      background-color: var(--main_blue_alt1);
+      &.spikes-top {
+        &::after {
+          background-image: linear-gradient(
+              45deg,
+              var(--main_blue_alt1) 25%,
+              transparent 25%
+            ),
+            linear-gradient(-45deg, var(--main_blue_alt1) 25%, transparent 25%);
+        }
+      }
+      &.spikes-buttom {
+        &::before {
+          background-image: linear-gradient(
+              135deg,
+              var(--main_blue_alt1) 25%,
+              transparent 25%
+            ),
+            linear-gradient(-135deg, var(--main_blue_alt1) 25%, transparent 25%);
+        }
+      }
+      h2,
+      p {
+        color: #fff;
+      }
+      p {
+        max-width: 400px;
+        @extend %text_center;
+
+        margin: 0;
+      }
+      img {
+        margin-top: 20px;
+        width: 200px;
+        width: 200px;
+      }
+    }
+    &:last-child {
+      background-color: #fff;
+      &.spikes-top {
+        &::after {
+          background-image: linear-gradient(45deg, #fff 25%, transparent 25%),
+            linear-gradient(-45deg, #fff 25%, transparent 25%);
+        }
+      }
+      &.spikes-buttom {
+        &::before {
+          background-image: linear-gradient(135deg, #fff 25%, transparent 25%),
+            linear-gradient(-135deg, #fff 25%, transparent 25%);
+        }
+      }
+      h2 {
+        color: var(--main_blue);
+      }
+    }
+    form#discount {
+      width: 100%;
+      max-width: 400px;
+      padding-left: 15px;
+      padding-right: 15px;
+      input,
+      textarea {
+        @extend %transition1;
+        background-color: #d4e4fd;
+        border-radius: 5px;
+        padding: 10px 15px;
+        border: 1px solid #d4e4fd;
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+        &:focus {
+          outline: none;
+          border-color: var(--main_blue_alt1);
+        }
+      }
+      textarea {
+        height: 250px;
+        resize: none;
+      }
+      input[type="submit"] {
+        @extend %transition1;
+        cursor: pointer;
+        font-family: "Charm", cursive;
+        border: 1px solid var(--main_blue_alt1);
+        border-radius: 4px;
+        @extend %text_capitalize;
+        color: var(--white_color);
+        font-weight: bold;
+        background: linear-gradient(
+          to right,
+          var(--main_blue_alt1) 50%,
+          var(--main_blue_alt2) 50%
+        );
+        background-size: 200% 100%;
+        background-position: right bottom;
+        &:hover {
+          background-position: left bottom;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .discount {
+    flex-direction: column-reverse;
+    justify-content: center;
+    .discount_box {
+      width: 100%;
+      &:first-child.spikes-top::after {
+        display: none;
+      }
+    }
+  }
+}
+// ______________________________________ end discount_page ________________________________

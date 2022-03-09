@@ -1,0 +1,27 @@
+/*
+      coding by :
+------------------------------------------------------------------------------
+--- Full Name     =>    Youssef Zouhri                                     ---
+--- Address       =>    moroco, khnefra Dr ait moussa                      ---
+--- E-mail        =>    profilede99@gmail.com                              ---
+--- Phone         =>    +212641452606                                      ---
+------------------------------------------------------------------------------
+*/
+// ______________________________________ start varaible root ________________________________
+
+:root {
+  //  colors
+  --main_blue: #002047;
+  --main_blue_alt1: #006bb9;
+  --main_blue_alt2: #4fa5d8;
+  --main_blue_alt3: #d4e4fd;
+  --main_green: #02b25f;
+  --white_color: #fff;
+  //  padding section
+  --section_padding: 90px;
+}
+// ______________________________________ end varaible root ________________________________
+
+%transition1 {
+  transition: all 0.5s;
+}

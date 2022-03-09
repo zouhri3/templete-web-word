@@ -1,0 +1,39 @@
+// ______________________________________ start article_page ________________________________
+.article {
+  @extend %padding_section;
+  .content {
+    @extend %diplay_grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 247px));
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .article_box {
+      box-shadow: 0 0 4px 1px var(--main_blue_alt3);
+      img {
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+      }
+      h3,
+      p,
+      a {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      h3,
+      a {
+        @extend %text_capitalize;
+      }
+      a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 1px solid var(--main_blue_alt3);
+        @extend %diplay_flex;
+        justify-content: space-between;
+        font-weight: bold;
+        color: var(--main_green);
+      }
+    }
+  }
+}
+// ______________________________________ end article_page ________________________________

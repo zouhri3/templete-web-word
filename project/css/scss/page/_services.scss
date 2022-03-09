@@ -1,0 +1,95 @@
+// ______________________________________ start services_page ________________________________
+.services {
+  @extend %padding_section;
+  background-color: var(--main_blue_alt3);
+  .content {
+    @extend %diplay_grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 40px;
+    justify-content: space-around;
+    .services_box {
+      @extend %diplay_flex;
+      background: var(--white_color);
+      flex-direction: column;
+      align-items: center;
+      counter-increment: section;
+      box-shadow: 0 0 10px 0px var(--main_blue_alt2);
+
+      .box {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        @extend %text_center;
+        i {
+          color: var(--main_blue);
+          opacity: 0.5;
+        }
+        h3 {
+          font-size: 1.4rem;
+          font-weight: bold;
+          @extend %text_capitalize;
+          color: var(--main_green);
+        }
+      }
+      .box_bottom {
+        @extend %diplay_flex;
+        width: 100%;
+        justify-content: space-between;
+        @extend %text_center;
+        @extend %position_relative;
+        &::before {
+          @extend %position_absolute;
+          content: "";
+          top: 0;
+          right: 0;
+          background-color: var(--main_green);
+          opacity: 0.1;
+          width: 100%;
+          height: 100%;
+        }
+        span,
+        a {
+          display: block;
+          padding: 10px 25px;
+        }
+        a {
+          color: var(--main_blue_alt1);
+          @extend %text_capitalize;
+          z-index: 30;
+        }
+        span {
+          @extend %position_relative;
+          width: 100px;
+          height: 100%;
+          overflow: hidden;
+          &::before,
+          &::after {
+            @extend %position_absolute;
+            top: 0;
+            height: 110%;
+          }
+          &::before {
+            content: "";
+            width: 40%;
+            right: 10%;
+            background-color: var(--main_blue_alt3);
+            transform: skew(338deg);
+            z-index: 2;
+          }
+          &::after {
+            content: "0" counter(section);
+            font-size: 17px;
+            background-color: var(--main_blue_alt1);
+            font-weight: bold;
+            color: var(--white_color);
+            left: 0;
+            width: 60%;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ______________________________________ end services_page ________________________________

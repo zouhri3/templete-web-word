@@ -1,0 +1,51 @@
+// ______________________________________ start works_page ________________________________
+.works {
+  @extend %padding_section;
+  background-color: var(--main_blue_alt3);
+  .content {
+    @extend %diplay_flex;
+    align-items: center;
+    gap: var(--section_padding);
+    justify-content: center;
+    .works_box {
+      @extend %diplay_grid;
+      grid-template-columns: repeat(auto-fill, minmax(1fr, 350px));
+      grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+      align-items: center;
+      gap: 25px;
+      &.box_image {
+        width: 50%;
+        img {
+          max-width: 100%;
+          max-height: 350px;
+          object-fit: contain;
+        }
+      }
+      .box {
+        @extend %diplay_flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background-color: var(--white_color);
+        padding: 5px 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 0px var(--main_blue_alt2);
+
+        h3 {
+          color: var(--main_green);
+        }
+        img {
+          width: 75px;
+          height: 75px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .works .content .works_box.box_image {
+    display: none;
+  }
+}
+// ______________________________________ start works_page ________________________________

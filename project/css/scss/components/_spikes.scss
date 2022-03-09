@@ -1,0 +1,38 @@
+// ______________________________________ start spikes  ________________________________
+.spikes-buttom,
+.spikes-top {
+  @extend %position_relative;
+  &::after,
+  &::before {
+    @extend %position_absolute;
+    content: "";
+    left: 0;
+    height: 20px;
+    z-index: 99;
+    width: 100%;
+    background-size: 25px;
+  }
+}
+.spikes-top {
+  &::after {
+    top: 0px;
+    background-image: linear-gradient(
+        135deg,
+        var(--main_blue_alt3) 25%,
+        transparent 25%
+      ),
+      linear-gradient(-135deg, var(--main_blue_alt3) 25%, transparent 25%);
+  }
+}
+.spikes-buttom {
+  &::before {
+    bottom: 0px;
+    background-image: linear-gradient(
+        45deg,
+        var(--main_blue_alt3) 25%,
+        transparent 25%
+      ),
+      linear-gradient(-45deg, var(--main_blue_alt3) 25%, transparent 25%);
+  }
+}
+// ______________________________________ end spikes  ________________________________

@@ -1,0 +1,38 @@
+// ______________________________________ start statistics_page ________________________________
+.statistics {
+  @extend %padding_section;
+  background-color: var(--main_blue_alt3);
+  .content {
+    @extend %diplay_grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 200px));
+    justify-content: center;
+    gap: 40px;
+    @extend %text_center;
+    @extend %text_capitalize;
+    .statistics_box {
+      box-shadow: 0 0 10px 0px var(--main_blue_alt2);
+      background-color: var(--white_color);
+      padding: 25px;
+      border-radius: 5px;
+      @extend %transition1;
+
+      i {
+        color: var(--main_green);
+      }
+      h3 {
+        font-size: 2.25rem;
+        margin: 0.75rem;
+      }
+      p {
+        font-style: italic;
+        margin: 0;
+        color: var(--main_blue_alt1);
+      }
+      &:hover {
+        box-shadow: 0 4px 10px 0px var(--main_blue_alt2);
+        transform: translateY(-15px);
+      }
+    }
+  }
+}
+// ______________________________________ start statistics_page ________________________________

@@ -1,0 +1,104 @@
+// ______________________________________ start team_page ________________________________
+.teams {
+  @extend %padding_section;
+  .content {
+    @extend %diplay_grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 262px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    .teams_box {
+      @extend %position_relative;
+      overflow: hidden;
+      padding-top: 40px;
+      &::after {
+        @extend %position_absolute;
+        @extend %transition1;
+        border-radius: 10px;
+        content: "";
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 90%;
+        background: linear-gradient(
+          to right,
+          var(--main_blue_alt1) 50%,
+          var(--main_blue) 50%
+        );
+        opacity: 0.15;
+        background-size: 200%;
+        background-position: left;
+        z-index: -1;
+      }
+      &:hover {
+        &::after {
+          background-position: right;
+        }
+        .box {
+          .social {
+            a {
+              i {
+                color: var(--main_blue) !important;
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+        img,
+        h3,
+        p {
+          filter: grayscale(1);
+        }
+      }
+      .box {
+        @extend %diplay_flex;
+        align-items: center;
+        img {
+          @extend %transition1;
+          width: 215px;
+          height: 250px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+        .social {
+          @extend %diplay_flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+          width: 20px;
+          a {
+            i {
+              @extend %transition1;
+              color: var(--main_blue);
+              opacity: 0.5;
+              font-size: 20px;
+            }
+            &:hover {
+              i {
+                color: var(--main_blue_alt1) !important;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      h3,
+      p {
+        padding-left: calc(15% + 10px);
+      }
+      h3 {
+        margin-top: 20px;
+        margin-bottom: -5px;
+        color: var(--main_green);
+      }
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        @extend %text_capitalize;
+      }
+    }
+  }
+}
+// ______________________________________ start team_page ________________________________

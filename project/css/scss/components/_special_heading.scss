@@ -1,0 +1,75 @@
+// ______________________________________ start special_heading  ________________________________
+
+h2.special_heading {
+  @extend %transition1;
+  z-index: 2;
+  margin: auto auto var(--section_padding);
+  width: fit-content;
+  outline: 2px solid var(--main_blue_alt1);
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-weight: bold;
+  @extend %position_relative;
+  color: var(--main_blue_alt1);
+  &::after,
+  &::before {
+    @extend %transition1;
+    content: "";
+    @extend %position_absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    pointer-events: none;
+    background-color: var(--main_blue_alt1);
+  }
+  &::after {
+    left: -25px;
+  }
+  &::before {
+    right: -25px;
+  }
+  &:hover {
+    outline: none;
+    color: #fff;
+    overflow: hidden;
+    &::after,
+    &::before {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      background-color: var(--main_blue_alt1);
+      outline: 2px solid var(--main_blue_alt1);
+    }
+    &::after {
+      left: 50%;
+    }
+    &::before {
+      right: 50%;
+    }
+  }
+}
+.active {
+  h2.special_heading {
+    color: #fff;
+    outline: none;
+    overflow: hidden;
+    &::after,
+    &::before {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      background-color: var(--main_blue_alt1);
+      outline: 2px solid var(--main_blue_alt1);
+    }
+    &::after {
+      left: 50%;
+    }
+    &::before {
+      right: 50%;
+    }
+  }
+}
+// ______________________________________ end special_heading ________________________________

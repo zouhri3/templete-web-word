@@ -1,0 +1,334 @@
+{
+    "dir": "ltr",
+    "home": {
+        "nav": [
+            [
+                "Home",
+                "Articls",
+                "Callery",
+                "Features",
+                "Outher Links"
+            ],
+            {
+                "Outher Links": [
+                    "testimonials",
+                    "TEAM MEMBERS",
+                    "services",
+                    "skills",
+                    "works",
+                    "events",
+                    "pricing",
+                    "videos",
+                    "statistics",
+                    "discount"
+                ]
+            }
+        ],
+        "landing": {
+            "h1": "welcome, to web world",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed"
+        }
+    },
+    "aticle": {
+        "h2": "article",
+        "article_box": [
+            {
+                "h3": "web desing",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "read more",
+                "icon": "fas fa-long-arrow-alt-right"
+            },
+            {
+                "h3": "clinets",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "read more",
+                "icon": "fas fa-long-arrow-alt-right"
+            },
+            {
+                "h3": "graphique",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "read more",
+                "icon": "fas fa-long-arrow-alt-right"
+            },
+            {
+                "h3": "erros web",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "read more",
+                "icon": "fas fa-long-arrow-alt-right"
+            },
+            {
+                "h3": "reader new",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "read more",
+                "icon": "fas fa-long-arrow-alt-right"
+            },
+            {
+                "h3": "web site",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "read more",
+                "icon": "fas fa-long-arrow-alt-right"
+            },
+            {
+                "h3": "journaliste",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "read more",
+                "icon": "fas fa-long-arrow-alt-right"
+            },
+            {
+                "h3": "marketing",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "read more",
+                "icon": "fas fa-long-arrow-alt-right"
+            }
+        ]
+    },
+    "gallery": {
+        "h2": "gallery"
+    },
+    "feature": {
+        "h2": "feature",
+        "feature_box": [
+            {
+                "h3": "passion",
+                "desc": " consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "more"
+            },
+            {
+                "h3": "time",
+                "desc": " consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "more"
+            },
+            {
+                "h3": "quality",
+                "desc": "consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed",
+                "link": "more"
+            }
+        ]
+    },
+    "testimonials": {
+        "h2": "testimonials",
+        "testimonials_box": [
+            {
+                "h3": "youssef zouhri",
+                "jobs": "front end",
+                "icon_sup": "fas fa-quote-left",
+                "icon_sub": "fas fa-quote-right",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed"
+            },
+            {
+                "h3": "atman zayan",
+                "jobs": "marketing local",
+                "icon_sup": "fas fa-quote-left",
+                "icon_sub": "fas fa-quote-right",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed"
+            },
+            {
+                "h3": "mohamed abd had",
+                "jobs": "seo at NGONE",
+                "icon_sup": "fas fa-quote-left",
+                "icon_sub": "fas fa-quote-right",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed"
+            },
+            {
+                "h3": "khadija el ghani",
+                "jobs": "machin intel",
+                "icon_sup": "fas fa-quote-left",
+                "icon_sub": "fas fa-quote-right",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed"
+            },
+            {
+                "h3": "khalid tagnawti",
+                "jobs": "marketing",
+                "icon_sup": "fas fa-quote-left",
+                "icon_sub": "fas fa-quote-right",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed"
+            },
+            {
+                "h3": "maryam zayanya",
+                "jobs": "back end",
+                "icon_sup": "fas fa-quote-left",
+                "icon_sub": "fas fa-quote-right",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In  quibusdam quis consequuntur qui nam labore consectetur eveniet quam sed"
+            }
+        ]
+    },
+    "teams": {
+        "h2": "TEAM MEMBERS",
+        "teams_box": [
+            {
+                "h3": "aicha halima",
+                "jobs": "front end"
+            },
+            {
+                "h3": "malika hayato",
+                "jobs": "marketing local"
+            },
+            {
+                "h3": "sara abd had",
+                "jobs": "seo"
+            },
+            {
+                "h3": "maryam zayanya",
+                "jobs": "machin intel"
+            },
+            {
+                "h3": "khalid tagnawti",
+                "jobs": "marketing"
+            },
+            {
+                "h3": "atman zayan",
+                "jobs": "ux&ui desing"
+            },
+            {
+                "h3": "youssef zouhri",
+                "jobs": "comptable generale"
+            },
+            {
+                "h3": "khadija el ghani",
+                "jobs": "back end"
+            }
+        ]
+    },
+    "services": {
+        "h2": "services",
+        "services_box": [
+            {
+                "h3": "security",
+                "link": "details"
+            },
+            {
+                "h3": "fixing issues",
+                "link": "details"
+            },
+            {
+                "h3": "location",
+                "link": "details"
+            },
+            {
+                "h3": "coding",
+                "link": "details"
+            },
+            {
+                "h3": "marketing",
+                "link": "details"
+            },
+            {
+                "h3": "desing",
+                "link": "details"
+            }
+        ]
+    },
+    "skills": {
+        "h2": "skills"
+    },
+    "works": {
+        "h2": "how it works ?",
+        "works_box": [
+            {
+                "h3": "business analysis",
+                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis? Praesentium mollitia neque at"
+            },
+            {
+                "h3": "architecture",
+                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis? Praesentium mollitia neque at"
+            },
+            {
+                "h3": "developement",
+                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis? Praesentium mollitia neque at"
+            }
+        ]
+    },
+    "events": {
+        "h2": "latest events",
+        "events_box": {
+            "h3": "tech masters event 2022",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis? Praesentium mollitia neque at",
+            "box_date": [
+                "days",
+                "hours",
+                "minutes",
+                "seconds"
+            ]
+        }
+    },
+    "pricing": {
+        "h2": "pricing",
+        "pricing_box": [
+            {
+                "h3": "basic",
+                "time": "per month",
+                "option_box": [
+                    "1GB HDD spacer",
+                    "E-mail address",
+                    "subdomains",
+                    "basic support"
+                ],
+                "btn": "choose plan"
+            },
+            {
+                "h3": "advinced",
+                "time": "per month",
+                "option_box": [
+                    "10GB HDD space",
+                    "E-mail address",
+                    "DATABASES & subdomains",
+                    "adviced support"
+                ],
+                "btn": "choose plan"
+            },
+            {
+                "h3": "professional",
+                "time": "per month",
+                "option_box": [
+                    "infinity HDD space",
+                    "4 E-mail address",
+                    "DATABASES & subdomains",
+                    "PRO support"
+                ],
+                "btn": "choose plan"
+            }
+        ]
+    },
+    "videos": {
+        "h2": "top videos"
+    },
+    "statistics": {
+        "h2": "our awesome stats",
+        "statistics_box": [
+            "client",
+            "project",
+            "contries",
+            "money"
+        ]
+    },
+    "discount": {
+        "h2": [
+            "we have a discount",
+            "request a discount"
+        ],
+        "discount_box_one": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis? Praesentium mollitia neque at"
+    },
+    "footer": {
+        "footer_box_one": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, corporis? Praesentium mollitia neque at",
+        "footer_box_tow": [
+            {
+                "h3": "thems",
+                "option": [
+                    "dark",
+                    "ligth"
+                ]
+            },
+            {
+                "h3": "language",
+                "option": [
+                    "arabic",
+                    "english"
+                ]
+            }
+        ],
+        "footer_box_three": {
+            "address": "moroco, khenifra, inside ait moussa, one",
+            "plan": "business hours: from 10:00 to 22:00"
+        }
+    }
+}

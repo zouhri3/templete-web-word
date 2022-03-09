@@ -1,0 +1,29 @@
+// ______________________________________ start grouping  ________________________________
+// padding section
+%padding_section {
+  padding-top: var(--section_padding);
+  padding-bottom: var(--section_padding);
+}
+// position
+%position_absolute {
+  position: absolute;
+}
+%position_relative {
+  position: relative;
+}
+// display
+%diplay_grid {
+  display: grid;
+}
+%diplay_flex {
+  display: flex;
+}
+
+// text aline
+%text_center {
+  text-align: center;
+}
+%text_capitalize {
+  text-transform: capitalize;
+}
+// ______________________________________ start grouping ________________________________

@@ -1,0 +1,65 @@
+// ______________________________________ start videos_page ________________________________
+.videos {
+  @extend %padding_section;
+  .content {
+    @extend %diplay_flex;
+    align-items: stretch;
+    .videos_box {
+      &.list_vidoes {
+        width: 450px;
+        border: 1px solid var(--main_blue_alt3);
+        max-height: 70vh;
+        overflow-y: auto;
+        @extend %position_relative;
+        h3 {
+          position: sticky;
+          z-index: 99;
+          top: 0;
+          color: var(--main_blue_alt1);
+          background-color: var(--main_blue_alt3);
+          margin: 0;
+          padding: 1rem 8px;
+          font-size: 1.07rem;
+          @extend %diplay_flex;
+          justify-content: space-between;
+          i {
+            font-size: 1rem;
+          }
+        }
+        p#item_videos {
+          cursor: pointer;
+          margin: 0;
+          padding: 13px;
+          font-size: 12.8px;
+          &:not(:last-of-type) {
+            border-bottom: 1px solid var(--main_blue_alt3);
+          }
+          &:hover:not(.active) {
+            opacity: 0.5;
+          }
+          &:hover,
+          &.active {
+            background-color: var(--main_blue_alt3);
+          }
+        }
+      }
+      &.lecture_vidoes {
+        width: 100%;
+        border: 7px solid var(--main_blue_alt3);
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .videos .content {
+    flex-direction: column-reverse;
+    .videos_box {
+      max-width: 100% !important;
+      overflow: hidden;
+      &.list_vidoes {
+        width: 100%;
+      }
+    }
+  }
+}
+// ______________________________________ end videos_page ________________________________

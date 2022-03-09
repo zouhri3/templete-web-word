@@ -1,0 +1,183 @@
+//  __________________________________ start header __________________________________
+header {
+  box-shadow: 0px 0px 7px 0px var(--main_blue_alt3);
+  background-color: var(--white_color);
+  &.fixed {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    @extend %diplay_flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    @extend %text_capitalize;
+    @extend %position_relative;
+  }
+  .logo {
+    color: var(--main_blue_alt1);
+    font-size: 1.5625rem;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 12px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .logo,
+  nav .item > a {
+    height: 70px;
+    line-height: 70px;
+  }
+  nav {
+    @extend %diplay_flex;
+    align-items: center;
+    gap: 1.5625rem;
+    font-weight: 600;
+    font-size: 1rem;
+    .item {
+      a {
+        color: var(--main_green);
+        @extend %transition1;
+      }
+      a.active.show + .mega_menu {
+        visibility: visible !important;
+        opacity: 1;
+      }
+      .mega_menu {
+        @extend %transition1;
+        opacity: 0;
+        visibility: hidden;
+        border-bottom: 4px solid var(--main_blue_alt1);
+        border-top: 1px solid var(--main_blue_alt3);
+        @extend %diplay_flex;
+        gap: 40px;
+        @extend %position_absolute;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 40px;
+        left: 0;
+        top: 100%;
+        width: calc(100% - 30px);
+        z-index: 999;
+        background-color: var(--white_color);
+
+        .img_box {
+          height: 300px;
+          width: 400px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain !important;
+          }
+        }
+        .links {
+          li.list_item {
+            cursor: pointer;
+            a {
+              width: 100%;
+              white-space: nowrap;
+              &:hover,
+              &.active {
+                background-color: var(--main_blue_alt3);
+                opacity: 1;
+              }
+              &:not(.active):hover {
+                opacity: 0.6;
+              }
+            }
+            li.list_item:not(:last-child) {
+              border-bottom: 1px solid var(--main_blue_alt3);
+            }
+          }
+          a {
+            color: var(--main_blue_alt1);
+            padding: 15px;
+            display: inline-block;
+            i {
+              margin-right: 10px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      > a {
+        display: inline-block;
+        @extend %transition1;
+        @extend %position_relative;
+        &::after {
+          @extend %transition1;
+          content: "";
+          @extend %position_absolute;
+          top: 0;
+          left: 50%;
+          height: 4px;
+          width: 0;
+          background-color: var(--main_blue_alt1);
+        }
+
+        &:hover,
+        &.active {
+          color: var(--main_blue_alt1);
+          &::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  header nav .item .mega_menu .img_box {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    .logo {
+      padding: 4px !important;
+    }
+    .logo,
+    nav .item > a {
+      height: 40px;
+      line-height: 40px;
+    }
+    .container {
+      @extend %diplay_flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 0;
+      nav {
+        gap: 10px;
+        .item {
+          > a {
+            &::after {
+              bottom: 0;
+              top: auto;
+            }
+          }
+          .mega_menu {
+            flex-direction: column;
+            gap: 10px;
+            .links a {
+              padding: 10px 0;
+            }
+            .links:first-of-type {
+              border-bottom: 2px solid var(--main_blue_alt2);
+              padding-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//  __________________________________ end header __________________________________

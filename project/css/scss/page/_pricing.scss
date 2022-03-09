@@ -1,0 +1,121 @@
+// ______________________________________ start pricing_page ________________________________
+.pricing {
+  @extend %padding_section;
+  background-color: var(--main_blue_alt3);
+  .content {
+    @extend %diplay_grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 350px));
+    @extend %text_center;
+    gap: 40px;
+    justify-content: center;
+    .pricing_box {
+      @extend %transition1;
+      box-shadow: 0 0 10px 0px var(--main_blue_alt2);
+      background-color: var(--white_color);
+      padding-top: 20px;
+      padding-bottom: 40px;
+      @extend %text_capitalize;
+      &.most_popular {
+        @extend %position_relative;
+        &::before,
+        &::after {
+          @extend %position_absolute;
+        }
+        &::before {
+          content: "";
+          right: 19px;
+          border: 18.5px solid;
+          border-color: transparent transparent var(--white_color) transparent;
+          z-index: 60;
+          top: 90px;
+        }
+        &::after {
+          content: "most popular";
+          text-align: left;
+          top: 0;
+          padding: 10px;
+          color: var(--white_color);
+          background-color: var(--main_green);
+          width: 105px;
+          font-weight: bold;
+          font-size: 0.8rem;
+          transform: rotate(90deg);
+          transform-origin: left top;
+          right: -105px;
+        }
+      }
+      &:hover {
+        box-shadow: 0 4px 10px 0px var(--main_blue_alt2);
+        transform: translateY(-15px);
+      }
+      .type_box {
+        i {
+          color: var(--main_blue);
+          opacity: 0.5;
+        }
+        p {
+          opacity: 1;
+          span {
+            display: block;
+            &:first-child {
+              font-size: 35px;
+              color: var(--main_blue_alt1);
+              font-weight: bold;
+              min-width: 60px;
+              height: 70px;
+              line-height: 70px;
+            }
+            &:last-child {
+              margin-top: -15px;
+              opacity: 0.7;
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+      .option_box {
+        text-align: start;
+        p {
+          opacity: 1;
+          &:not(:first-of-type) {
+            padding-top: 1rem;
+            border-top: 1px solid var(--main_blue_alt3);
+          }
+          i.fas.fa-check {
+            color: var(--main_blue_alt1);
+            font-size: 15px;
+            padding-left: 7px;
+            padding-right: 7px;
+          }
+        }
+      }
+      button {
+        @extend %transition1;
+        outline: none;
+        cursor: pointer;
+        display: block;
+        margin: 35px auto auto;
+        padding: 10px;
+        border: 2px solid var(--main_blue_alt1);
+        width: fit-content;
+        border-radius: 4px;
+        @extend %text_capitalize;
+        color: var(--main_blue_alt1);
+        font-weight: bold;
+        background: linear-gradient(
+          to right,
+          var(--main_blue_alt1) 50%,
+          var(--white_color) 50%
+        );
+        background-size: 200% 100%;
+        background-position: right bottom;
+
+        &:hover {
+          background-position: left bottom;
+          color: var(--white_color);
+        }
+      }
+    }
+  }
+}
+// ______________________________________ end pricing_page ________________________________

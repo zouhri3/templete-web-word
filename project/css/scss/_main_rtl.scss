@@ -1,0 +1,82 @@
+//  __________________________________ start all rulls to diriction change __________________________________
+body[dir="rtl"] {
+  font-family: "Noto Sans Arabic", sans-serif;
+  .home .landing::after {
+    transform: skewY(6deg);
+    transform-origin: right;
+  }
+  .feature .content .feature_box {
+    &:hover .box_img::after {
+      transform: skewX(-74deg);
+    }
+    .box_img::after {
+      transform: skewX(-106deg);
+    }
+    a {
+      background: linear-gradient(
+        to left,
+        var(--color_special) 50%,
+        var(--white_color) 50%
+      );
+      background-size: 220% 110%;
+      background-position: left bottom;
+
+      &:hover {
+        background-position: right bottom;
+        color: var(--white_color);
+      }
+    }
+  }
+  .testimonials .content .testimonials_box .box_img,
+  .teams .content .teams_box::after,
+  header.fixed {
+    right: auto;
+    left: 0;
+  }
+  .testimonials .content .testimonials_box .box_img {
+    transform: translate(-6px, -50%);
+  }
+  .teams .content .teams_box {
+    &:hover {
+      &:after {
+        background-position: left;
+      }
+    }
+    &:after {
+      background: linear-gradient(
+        to left,
+        var(--main_blue_alt1) 50%,
+        var(--main_blue) 50%
+      );
+      background-size: 200%;
+      background-position: right;
+    }
+    p,
+    h3 {
+      padding-right: calc(15% + 10px);
+      padding-left: auto;
+    }
+  }
+  .services .content .services_box .box_bottom span::after {
+    right: 0;
+    left: auto;
+  }
+  .services .content .services_box .box_bottom span::before {
+    right: auto;
+    left: 10%;
+  }
+  .pricing .content .pricing_box button {
+    background: linear-gradient(
+      to left,
+      var(--main_blue_alt1) 50%,
+      var(--white_color) 50%
+    );
+    background-size: 210%;
+    background-position: left;
+    &:hover {
+      background-position: right;
+    }
+  }
+}
+
+//  __________________________________ start all rulls to diriction change __________________________________

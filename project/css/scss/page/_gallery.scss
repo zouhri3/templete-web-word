@@ -1,0 +1,57 @@
+// ______________________________________ start gallery_page ________________________________
+.gallery {
+  @extend %padding_section;
+  background-color: var(--main_blue_alt3);
+  .content {
+    @extend %diplay_grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 275px));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 275px));
+    justify-content: center;
+    gap: 40px;
+    .box_img {
+      border: 10px solid rgba(255, 255, 255, 0.5);
+      overflow: hidden;
+      @extend %position_relative;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 0 15px 0px var(--main_blue_alt2);
+      &:hover {
+        &::before {
+          animation: flash 0.3s;
+        }
+        img {
+          transform: rotate(5deg) scale(1.1);
+        }
+      }
+      &::before {
+        content: "";
+        @extend %position_absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        background-color: #fff;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+      }
+      img {
+        transition: 1s 0.3s;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+@keyframes flash {
+  0%,
+  40% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    width: 150%;
+    height: 150%;
+  }
+}
+// ______________________________________ start gallery_page ________________________________

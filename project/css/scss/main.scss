@@ -1,0 +1,28 @@
+@import "helpers/variabla";
+/*
+==================this is ruls css=============
+*/
+
+@import "layout/global";
+@import "components/extend";
+@import "components/spikes";
+@import "layout/header";
+@import "components/special_heading";
+@import "page/home";
+@import "page/article";
+@import "page/gallery";
+@import "page/feature";
+@import "page/testimonials";
+@import "page/team";
+@import "page/services";
+@import "page/skills";
+@import "page/works";
+@import "page/events";
+@import "page/pricing";
+@import "page/videos";
+@import "page/statistics";
+@import "page/discount";
+@import "layout/footer";
+
+// ================== is ruls rtl css=============
+@import "./main_rtl";
